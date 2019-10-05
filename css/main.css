@@ -1,0 +1,789 @@
+body{
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  width: 100%;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+/* ***** container global ***** */
+/* ***** permet de centrer la page  ***** */
+#container-global{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* ******************** header ******************** */
+/* ***** container header ***** */
+#header-menu{
+  height: 100px;
+  right: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  color: #fff;
+  z-index: 999;
+}
+/* ***** menu ***** */
+.link{
+  height: 100%;
+  text-decoration: none;
+  font-family: "roboto";
+  font-weight: 500;
+  color: #858585;
+  padding: 38px 10px;
+}
+.link:hover {
+  border-top: 3px solid #5cadd3;
+  color: #555555;
+}
+/* ***** slider ***** */
+.slider-container{
+  position: relative;
+  margin-top: 100px;
+  padding: 0;
+  color: #fff;
+}
+.slider-container img{
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+}
+.bar-progression-slider{
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(0,0,0,0.2);
+}
+.bleu-bar-progression{
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  height: 4px;
+  width: 14%;
+  background: #5cadd3;
+}
+/* ***** contenu slider ***** */
+.box-text-slider{
+  position: absolute;
+  bottom: 25%;
+  left: 15%;
+  width: 100%;
+  margin: auto;
+  font-family: "roboto";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.box-text-slider h1 span{
+  color: #5cadd3;
+  font-weight: 900;
+}
+.box-text-slider h1{
+  text-transform: uppercase;
+}
+.more-infos{
+  height: 44px;
+  width: 125px;
+  margin-top: 10px;
+  background: #5cadd3;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; 
+  font-size: 14px;
+  border-bottom: 3px solid #468cad;
+  border-radius: 2px;
+  color:#fff;
+}
+/* ***** btn slider ***** */
+.half-circle{
+  background: rgba(0,0,0,0.3);
+}
+.circle-right,
+.circle-left{
+  position: absolute;
+  top: 45%;
+  height: 60px;
+  width: 35px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.circle-right{
+  left: 0;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  float: left;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  color: #fff;  
+  margin: auto;
+}
+.circle-left{
+  right: 0;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  float: right;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  color: #fff;
+  margin: auto;
+}
+/* ******************** nos services ******************** */
+/* ***** container ***** */
+#services{
+  background: #fff;
+  height: 100%;
+}
+/* ***** titre et encard ***** */
+h2{
+  padding: 2%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.underline{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+p{
+  color: #858585;
+}
+.text-exercice{
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  text-align: justify;
+  font-weight: bold;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.ligne{
+  width: 55px;  
+  height: 1px;
+  background: #858585;
+}
+.blueball-title{
+  background: #5cadd3;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+}
+/* ***** services et exemple 2 colonums by flex ***** */
+.box-services{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.types-services{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.blueball-services{
+  position: absolute;
+  background: #5cadd3;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  margin-left: 70px;
+  margin-top: 40px;
+}
+.icon{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #858585;
+  color: #5cadd3;
+  font-size: 30px;
+  padding: 15px;
+  margin: 15px;
+  margin-right: 25px;
+  float: left;
+  vertical-align: middle;
+}
+/* ******************** nos projets ******************** */
+/* ***** container ***** */
+#portfolio{
+  height: 100%;
+  margin: 0 auto;
+  background: #f5f5f5;
+}
+/* ***** menu btn projets ***** */
+.projets{
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.text-projets{
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  text-align: justify;
+  font-weight: bold;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.btn-projets{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2%;
+  margin-bottom: 0px;
+}
+.btn-projet{
+  background: #e5e5e5;
+  border: none;
+  color: #858585;
+  width: 88px;
+  height: 38px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+#btn-menu-projets-allworks{
+  border-top-left-radius: 5px 5px;
+  border-bottom-left-radius: 5px 5px;
+}
+#btn-menu-projets-portfolio{
+  border-top-right-radius: 5px 5px;
+  border-bottom-right-radius: 5px 5px;
+}
+.btn-projet:hover{
+  height: 38px;
+  background: #5cadd3;
+  color: #fff;
+  border-bottom: 2px solid #468cad;
+}
+/* ***** gestion des triangles sous le menu projets ***** */
+.triangle{
+  display:none;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #468cad;
+}
+#triangle-1{
+  position: absolute;
+  top: 38px;
+  left: 38px;
+}
+#triangle-2{
+  position: absolute;
+  top: 38px;
+  left: 126px;
+}
+#triangle-3{
+  position: absolute;
+  top: 38px;
+  right: 126px;
+}
+#triangle-4{
+  position: absolute;
+  top: 38px;
+  right: 38px;
+}
+/* ***** affichage du triangle d'un btn menu projets ***** */
+#afficher-triangle-1:hover #triangle-1 {
+  display:block
+}
+#afficher-triangle-2:hover #triangle-2 {
+  display:block
+}
+#afficher-triangle-3:hover #triangle-3 {
+  display:block
+}
+#afficher-triangle-4:hover #triangle-4 {
+  display:block
+}
+/* ***** mosaique et cartouche infos sur img ***** */
+.all-works{
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2%;
+}
+.image-portfolio{
+  position: relative;
+  width: 300px;
+  margin: 12px;
+}
+/* ***** image portfolio ***** */
+.image-portfolio img{
+  width: 300px;
+}
+/* ***** cartouche infos sur img ***** */
+.cartouche{
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  height: 50px;
+  width: 300px;
+  background: rgba(0,0,0,0.6);
+  text-transform: capitalize;
+  color: #fff;
+}
+.cartouche-info{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-left: 5px;
+}
+h3{
+  margin: 4px 0px;
+  padding-left: 5px;
+  font-size: 16px;
+}
+.service h3{
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+.definition{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.text-cartouche{
+  text-transform: none;
+  padding-left: 5px;
+  font-size: 14px;
+}
+.icon-cartouche{
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #5cadd3;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 10px;
+  padding: 8px;
+  margin: 5px;
+  margin-left: 180px;
+  margin-bottom: 50px;
+}
+/* ***** affichage du cartouche de l'img du portfolio ***** */
+#afficher-cartouche-1:hover #cartouche-1 {
+  display:block
+}
+#afficher-cartouche-2:hover #cartouche-2 {
+  display:block
+}
+#afficher-cartouche-3:hover #cartouche-3 {
+  display:block
+}
+#afficher-cartouche-4:hover #cartouche-4 {
+  display:block
+}
+#afficher-cartouche-5:hover #cartouche-5 {
+  display:block
+}
+#afficher-cartouche-6:hover #cartouche-6 {
+  display:block
+}
+#afficher-cartouche-7:hover #cartouche-7 {
+  display:block
+}
+#afficher-cartouche-8:hover #cartouche-8 {
+  display:block
+}
+/* ********** footer contact ********** */
+/* ***** container ***** */
+.contact-footer{
+  height: 600px;
+  background: rgba(92,173,211,1);
+}
+/* ***** iframe google-maps ***** */
+#map-contact{
+  height: 600px;
+  width: 100%;
+  opacity: 0.7;
+  border: 0;}
+/* ***** container contact ***** */
+.contact{
+  position: relative;
+}
+/* ***** fiche contact ***** */
+.fiche-contact{
+  position: absolute;
+  top: 6%;
+  right: 10%;
+  height: 530px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #858585;
+  background: rgba(255,255,255,0.8);
+}
+#contact-title{
+  font-family: 'roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #000;
+  padding-left: 0px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#contact-socity{
+  font-family: 'roboto', sans-serif;
+  font-weight: 700;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+#contact-adresse{
+  font-family: 'roboto', sans-serif;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+#contact-tel{
+  font-family: 'roboto', sans-serif;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  text-decoration: underline dotted;
+}
+#contact-tel-number{
+  font-family: 'roboto', sans-serif;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  text-decoration: none;
+}
+/* ***** formulaires ***** */
+.formulaire{
+  height: 30px;
+  width: 310px;
+  margin-top: 14px;
+  border-radius: 5px;
+  font-family: 'roboto', sans-serif;
+  text-transform: capitalize;
+  background: #fff;
+  color: #858585;
+  opacity: 1;
+  border: 0px solid #858585; 
+}
+input{
+  height: 30px;
+  width: 300px;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-family: 'roboto', sans-serif;
+  text-transform: capitalize;
+  background: #fff;
+  color: #858585;
+  border: 1px solid #858585;
+}
+::placeholder{
+  font-weight: bold;
+}
+textarea{
+  height: 165px;
+  width: 300px;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-family: 'roboto', sans-serif;
+  text-transform: capitalize;
+  background: #fff;
+  color: #858585;
+  border: 1px solid #858585;
+}
+#contact-message{
+  height: 165px;
+  width: 310px;
+}
+/* ***** btn send message ***** */
+#btn-contact{
+  height: 35px;
+  width: 110px;
+  margin-top: 135px;
+  margin-bottom: 7px;
+  background: #5cadd3;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 3px solid #468cad;
+  font-family: 'roboto', sans-serif;
+}
+/* ********** RESPONSIVE ********** */
+
+@media only screen and (max-width: 1024px) {
+
+  /* ***** header-menu ***** */
+  #header-menu{
+    max-width: 1024px;
+    min-width: 1024px;
+    flex-flow: column;
+    align-items: flex-start;
+  }
+  .logo{
+    padding-left: 5%;
+  }
+  .menu{
+    padding-left: 5%;
+  }
+  .link{
+    padding: 0 10px;
+  }
+
+  /* ***** nos services ***** */
+  #services{
+    height: 100%;
+    min-width: 100%;
+  }
+  .text-exercice{
+    font-size: 16px;
+    margin-left: 8%;
+    margin-right: 14%;
+  }
+  .nos-services{
+    height: 100%;
+    width: 1024px;
+  }
+  .box-services{
+    flex-direction: column;
+    margin: 0;
+  }
+  /* ***** nos projets ***** */
+  .nos-projets{
+    height: 100%;
+    width: 100%;
+  }
+  .text-projets{
+    margin-left: 8%;
+    margin-right: 14%;
+  }
+  .btn-projet{
+    height: 37px;
+  }
+  .btn-projets{
+    margin: 0;
+  }
+  .btn-projet{
+    width: 70px;
+  }
+  #triangle-1{
+    left: 29px;
+  }
+  #triangle-2{
+    left: 99px;
+  }
+  #triangle-3{
+    right: 99px;
+  }
+  #triangle-4{
+    right: 29px;
+  }
+}
+
+/* ********** RESPONSIVE ********** */
+
+@media only screen and (max-width: 840px) {
+  /* ***** header-menu ***** */
+  .half-circle{
+    display: none;
+  }
+  .box-text-slider {
+    font-size: 1.9vw;
+  }
+  .more-infos{
+    height: 4vh;
+    width: 14vw;
+    padding: 5px;
+    font-size: 1.7vw;
+  }
+  /* ***** footer contact ***** */
+  .fiche-contact{
+    position: static;
+  }
+}
+/* ********** RESPONSIVE ********** */
+
+@media only screen and (max-width: 678px) {
+  /* ***** header-menu ***** */
+  .more-infos {
+    display: none;
+  }
+  .box-text-slider{
+    width: 280px;
+    text-shadow: 1px 1px 2px #000;
+  }
+}
+
+/* ********** RESPONSIVE ********** */
+
+@media only screen and (max-width: 376px) {
+
+  /* ***** header-menu ***** */
+  #header-menu{
+    max-width: 320px;
+    min-width: 320px;
+    flex-flow: column;
+    align-items: flex-start;
+    align-content: space-around;
+    justify-content: center;
+    position: fixed;
+  }
+  .logo{
+    padding-left: 5%;
+  }
+  .menu{
+    padding-left: 5%;
+  }
+  .link{
+    padding: 0;
+  }
+  .box-text-slider{
+    left: 5vw;
+    top: 0;
+    margin: 0;
+  }
+  .box-text-slider h1{
+    font-size: 4.5vw;
+    }
+  .box-text-slider h1 span{
+    font-size: 4.5vw;
+  }
+  .box-text-slider span{
+    font-size: 4vw;
+  }
+  .more-infos{
+    display: none;
+  }
+  .half-circle {
+   display: none;
+  }
+  /* ***** nos services ***** */
+  #services{
+    margin-top: 0;
+    height: 100%;
+    max-width: 100%;
+  }
+  .nos-services{
+    height: 100%;
+    width: 320px;
+  }
+  h2{ 
+    font-size: 22px;
+    margin-left: 8%;
+    margin-right: 14%;
+  }
+  .text-exercice{
+    font-size: 16px;
+    margin-left: 8%;
+    margin-right: 14%;
+  }
+  .underline{
+    margin-left: 8%;
+    margin-right: 14%;
+  }
+  .box-services{
+    flex-direction: column;
+    margin: 0;
+  }
+  .screen{
+    max-width: 120%;
+  }
+  .screen img{
+    max-width: 320px;
+  }
+  .service h3{
+    margin-top: 19%;
+    margin-bottom: 19%;
+  }
+  .service p{
+    padding-top: 8%;
+  }
+  /* ***** nos projets ***** */
+  .nos-projets{
+    height: 100%;
+    width: 320px;
+  }
+  .text-projets{
+    font-size: 16px;
+    margin-left: 8%;
+    margin-right: 14%;
+  }
+  .projets{
+    width: 320px;
+    flex-direction: column;
+  }
+  .service p{
+    width: 180px;
+  }
+  .icon{
+    margin-top: 15px;
+  }
+  .blueball-services{
+    margin-top: 40px;
+  }
+  .btn-projet{
+    height: 37px;
+  }
+  .btn-projets{
+    margin: 0;
+  }
+  .btn-projet{
+    width: 70px;
+  }
+  #triangle-1{
+    left: 29px;
+  }
+  #triangle-2{
+    left: 99px;
+  }
+  #triangle-3{
+    right: 99px;
+  }
+  #triangle-4{
+    right: 29px;
+  }
+  /* ***** footer-contacts ***** */
+  .formulaire{
+    width: 260px;
+  }
+  input{
+    width: 260px;
+  }
+  textarea{
+    height: 165px;
+    width: 258px;
+  }
+  #contact-message{
+    height: 165px;
+    width: 260px;
+  }
+}
+
